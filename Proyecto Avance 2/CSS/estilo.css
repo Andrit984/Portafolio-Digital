@@ -1,0 +1,72 @@
+/*
+primary #212121
+secundary #bdbdbd
+tercero #8d8d8d
+cuarto #484848
+*/
+
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    --main-color: #0ebd6bd5;
+    --second-color: #404145;
+}  
+
+body{
+   
+    height: 145vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(5, 5, 5, 0.979), transparent), url(/IMG/fondo_hederII.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header{
+  
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+    height: 100px;
+    transition: 0.5s;
+}
+
+.logo{
+    height: 60%;
+}
+
+.scrolled-search{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.main-menu{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item{
+    margin: 0 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #f2f2f2;
+}
+
+
+
+.menu-item:hover{
+    color: var(--main-color);
+}
